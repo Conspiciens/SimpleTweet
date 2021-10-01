@@ -33,8 +33,18 @@
         android:id="@+id/rvTimeStamp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_toEndOf="@+id/tvScreenName"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/tvName"
         tools:text="TimeStamp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/tvScreenName"
+        tools:text="Jojo" />
 
 </RelativeLayout>

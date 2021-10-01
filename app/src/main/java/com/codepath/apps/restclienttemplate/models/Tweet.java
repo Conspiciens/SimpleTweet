@@ -15,6 +15,7 @@ public class Tweet {
 
     public String body;
     public String createdAt;
+    public String name;
     public long id;
     public User user;
     // public String date;
@@ -25,6 +26,8 @@ public class Tweet {
         Tweet tweet = new Tweet();
         tweet.body = jsonObject.getString("text");
         tweet.createdAt = jsonObject.getString("created_at");
+        // Here
+        // tweet.user = User.fromJson(jsonObject.getJSONObject("name"));
         tweet.id = jsonObject.getLong("id");
         tweet.user = User.fromJson(jsonObject.getJSONObject("user"));
 
