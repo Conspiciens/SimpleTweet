@@ -1,16 +1,16 @@
 package com.codepath.apps.restclienttemplate.models;
 
-import android.os.Parcel;
-
 import com.codepath.apps.restclienttemplate.TimeFormatter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Parcel
 public class Tweet {
 
     public String body;
@@ -18,6 +18,8 @@ public class Tweet {
     public long id;
     public User user;
     // public String date;
+
+    public Tweet() {}
 
     public static Tweet fromJson(JSONObject jsonObject) throws JSONException {
         Tweet tweet = new Tweet();
